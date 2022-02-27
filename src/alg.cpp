@@ -4,7 +4,7 @@
 #include "alg.h"
 
 bool checkPrime(uint64_t value) {
-if (value % 2 == 0) return 0;
+if (value % 2 == 0 && value != 2) return 0;
 uint64_t root = sqrt(value);
 for (uint64_t i = 3; i <= root; i += 2) {
 if (value % i == 0) return 0; }
