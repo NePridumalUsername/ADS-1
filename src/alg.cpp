@@ -18,14 +18,10 @@ if (checkPrime(num)) i++; }
 return num; }
 
 uint64_t nextPrime(uint64_t value) {
-uint64_t i = 0, num = 1;
-while (i < value) {
-num++;
-if (checkPrime(num)) i++; }
-return num; } 
 while (true) {
 value++;
-if (checkPrime(value)) return value; } }
+if (checkPrime(value)) return value; }
+}
 
 uint64_t sumPrime(uint64_t hbound) {
 uint64_t sum = 0;
